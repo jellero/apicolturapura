@@ -37,7 +37,7 @@ button, input, textarea { font: inherit; }
   border-bottom: 1px solid rgba(255,255,255,.16);
 }
 .nav-wrap { height: 104px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
-.brand img { width: 116px; height: auto; filter: drop-shadow(0 3px 12px rgba(0,0,0,.15)); }
+.brand img { width: 116px; height: auto; filter: brightness(0) invert(1) drop-shadow(0 3px 12px rgba(0,0,0,.18)); }
 .main-nav { display: flex; align-items: center; gap: 30px; }
 .main-nav a { color: white; text-decoration: none; font-size: .92rem; font-weight: 600; letter-spacing: .01em; opacity: .9; }
 .main-nav a:hover { opacity: 1; }
@@ -110,11 +110,15 @@ h3 { font-size: 2rem; letter-spacing: -.02em; }
 .honey-card p { margin: 0; color: #4b5a51; font-size: .94rem; }
 .botanical { font-family: "Fraunces", Georgia, serif; font-size: .9rem; font-style: italic; color: var(--moss); }
 
-.real-company { background: var(--paper); }
-.real-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 86px; align-items: center; }
+.real-company { background: var(--paper); overflow: hidden; }
+.real-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 86px; align-items: center; }
+.brand-photos { position: relative; min-height: 500px; display: grid; align-items: center; }
 .real-photo { margin: 0; }
-.real-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); image-rendering: auto; }
-.real-photo figcaption { font-size: .75rem; color: var(--muted); margin-top: 11px; }
+.real-photo img { width: 100%; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); image-rendering: auto; }
+.people-photo { width: 88%; }
+.people-photo img { aspect-ratio: 4 / 3; }
+.jar-photo { position: absolute; right: 0; bottom: 0; width: 43%; z-index: 2; }
+.jar-photo img { aspect-ratio: 1 / 1; border: 8px solid var(--paper); border-radius: 20px; }
 .real-copy h2 { margin-bottom: 24px; }
 .real-copy p { color: #46534c; }
 .real-copy .button { margin-top: 12px; }
@@ -175,6 +179,7 @@ h3 { font-size: 2rem; letter-spacing: -.02em; }
   .identity-grid > div:nth-child(2) { border-right: 0; }
   .identity-grid > div:nth-child(3) { padding-left: 0; }
   .story-grid, .real-grid, .territory-grid, .contact-card { grid-template-columns: 1fr; gap: 52px; }
+  .brand-photos { max-width: 720px; min-height: 520px; }
   .honey-grid { grid-template-columns: repeat(2, 1fr); }
   .altitude-card { justify-self: start; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -202,11 +207,7 @@ h3 { font-size: 2rem; letter-spacing: -.02em; }
       linear-gradient(180deg, rgba(4,25,19,.08) 0%, rgba(4,25,19,.18) 38%, rgba(4,25,19,.72) 100%),
       linear-gradient(90deg, rgba(5,31,23,.32), transparent 72%);
   }
-  .hero-content {
-    padding-top: 126px;
-    padding-bottom: 34px;
-    gap: 34px;
-  }
+  .hero-content { padding-top: 126px; padding-bottom: 34px; gap: 34px; }
   .hero-copy { align-self: center; }
   .hero-copy h1 { max-width: 9ch; }
   .hero-lead { margin: 22px 0 28px; max-width: 34ch; }
@@ -221,6 +222,10 @@ h3 { font-size: 2rem; letter-spacing: -.02em; }
   .identity-grid > div:last-child { border-bottom: 0; }
   .section { padding: 82px 0; }
   .story-grid, .real-grid, .territory-grid { gap: 42px; }
+  .brand-photos { min-height: 380px; }
+  .people-photo { width: 96%; }
+  .jar-photo { width: 47%; right: -2px; bottom: 0; }
+  .jar-photo img { border-width: 6px; }
   .honey-grid { grid-template-columns: 1fr; }
   .honey-card { min-height: 250px; }
   .award { grid-template-columns: 80px 1fr; gap: 18px; }
