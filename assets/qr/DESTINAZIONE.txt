@@ -1,0 +1,5 @@
+QR Bioapicoltura Pura — Rivista
+Destinazione pianificata: https://apicolturapura.it/r/
+
+ATTENZIONE: usare in stampa solo dopo aver registrato/verificato il dominio apicolturapura.it e collegato il dominio al sito.
+Il percorso /r/ reindirizza alla landing /rivista/ con parametri UTM.
