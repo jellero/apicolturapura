@@ -1,1 +1,0 @@
-Foto proprietarie Bioapicoltura Pura fornite per il sito.
