@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Bioapicoltura Pura">
+  <rect width="64" height="64" rx="16" fill="#153d2f"/>
+  <circle cx="24" cy="31" r="7" fill="#d9a83f"/>
+  <circle cx="22" cy="20" r="4.2" fill="#ffffff"/>
+  <path d="M30 29c6-12 18-13 22-5 3.5 7-2 14-11 13-5-.5-8-3-11-8Z" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M31 34c6 11 17 13 22 5 4-7-1-14-10-14-6 0-9 3-12 9Z" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M17 15l-4-4M27 14l2-6" stroke="#d9a83f" stroke-width="3" stroke-linecap="round"/>
+</svg>
